@@ -65,8 +65,8 @@
 
     /* ► AJUSTE FINO DA SUA FOTO: mude estes dois valores até o
          vidro cortar o seu rosto no meio, como no pôster. */
-    --foto-x: 50%;   /* horizontal: 50% = centro, 70% = puxa pra direita */
-    --foto-y: 48%;   /* vertical: menor = mostra mais o topo da cabeça */
+    --foto-x: 51%;   /* horizontal: 50% = centro, 70% = puxa pra direita */
+    --foto-y: 85%;   /* vertical: menor = mostra mais o topo da cabeça */
   }
 
   *{box-sizing:border-box;margin:0;padding:0}
@@ -222,7 +222,7 @@
      ESTADO ABERTO
      ─────────────────────────────────────────────── */
   .palco.revelado .vidro{transform:translateX(-101%); animation:none}
-  .palco.revelado .retrato{transform:scale(1.03) translateX(18%); object-position:56% var(--foto-y); filter:brightness(.82) saturate(.95)}
+  .palco.revelado .retrato{transform:translateX(18%); object-position:61% var(--foto-y); filter:brightness(.82) saturate(.95)}
   .palco.revelado .pergunta{top:clamp(2.2rem,5vh,4rem); transform:translateY(0) scale(.42); transform-origin:left top}
   .palco.revelado .camada--pergunta{opacity:0; transform:translateY(-.3em)}
   .palco.revelado .camada--resposta{opacity:1; transform:translateY(0)}
@@ -405,7 +405,7 @@
      MOBILE
      ─────────────────────────────────────────────── */
   @media (max-width:820px){
-    :root{--foto-x:50%}
+    :root{--foto-x:51%}
     .vidro{width:100%; top:0; height:100%; bottom:auto;
       background:linear-gradient(190deg, rgba(228,232,226,.34), rgba(200,208,202,.52));
       animation:none;}
